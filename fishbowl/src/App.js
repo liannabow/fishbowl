@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <Button variant="outline-primary">Start</Button>
+        <Button variant="success">Start</Button>
       </header>
     </div>
   );
