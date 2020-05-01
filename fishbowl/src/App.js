@@ -7,7 +7,7 @@ import TeamSignup from './components/TeamSignup';
 function App() {
   return (
     <Switch>
-      <Route path="/" component={SplashScreen}/>
+      <Route exact path="/" component={SplashScreen}/>
       <Route path="/TeamSignup" component={TeamSignup}/>
     </Switch>
   );
