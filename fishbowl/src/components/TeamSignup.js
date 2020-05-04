@@ -16,17 +16,19 @@ class TeamSignup extends React.Component {
             <h1>Team Signup</h1>
           </Col>
         </Row>
-        <Row className="Row">
-          <Col xs={8}>
-            <Form.Control
-              type="text"
-              placeholder="Player Name"
-              />
-          </Col>
-          <Col>
-            <Button variant="primary">Add</Button>
-          </Col>
-        </Row>
+          <Form>
+            <Form.Row>
+              <Col xs={8}>
+                <Form.Control
+                  type="text"
+                  placeholder="Player Name"
+                  />
+              </Col>
+              <Col>
+                <Button variant="primary">Add</Button>
+              </Col>
+            </Form.Row>
+          </Form>
         <Row className="Row">
           <Col>
             <div align="center">
