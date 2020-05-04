@@ -8,6 +8,25 @@ import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 
 class TeamSignup extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      playerName: ''
+    };
+
+    this.changePlayerName = this.changePlayerName.bind(this);
+    this.addPlayer = this.addPlayer.bind(this);
+  }
+
+  changePlayerName(event) {
+    this.setState({playerName: event.target.value})
+  }
+
+  addPlayer(event) {
+    alert('A name was submitted: ' + this.state.playerName);
+    event.preventDefault();
+  }
+  
   render() {
     return (
       <Container>
@@ -16,16 +35,18 @@ class TeamSignup extends React.Component {
             <h1>Team Signup</h1>
           </Col>
         </Row>
-          <Form>
+          <Form onSubmit={this.addPlayer}>
             <Form.Row>
               <Col xs={8}>
                 <Form.Control
                   type="text"
                   placeholder="Player Name"
+                  value={this.state.playerName}
+                  onChange={this.changePlayerName}
                   />
               </Col>
               <Col>
-                <Button variant="primary">Add</Button>
+                <Button variant="primary" type="submit">Add</Button>
               </Col>
             </Form.Row>
           </Form>
