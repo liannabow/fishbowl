@@ -17,7 +17,7 @@ function TeamSignup() {
       </Row>
       <Row className="Row">
         <Col xs={8}>
-          <Form.Control placeholder="Player Name" />
+          <Form.Control type="text" placeholder="Player Name" />
         </Col>
         <Col>
           <Button variant="primary">Add</Button>
