@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  
 import './TeamSignup.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -124,7 +125,9 @@ class TeamSignup extends React.Component {
           </Col>
           <Col>
             <div align="center">
-              <Button variant="success">Next</Button>
+              <Link to="/Timing">
+                <Button variant="success">Next</Button>
+              </Link>              
             </div>
           </Col>
         </Row>
