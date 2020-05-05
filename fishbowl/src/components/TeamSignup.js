@@ -71,14 +71,7 @@ class TeamSignup extends React.Component {
             <div align="center">
               <Button variant="secondary">Team 1</Button>
               <Table striped bordered hover>
-                <tbody>
-                  <tr>
-                    <td>Name 1</td>
-                  </tr>
-                  <tr>
-                    <td>Name 2</td>
-                  </tr>
-                </tbody>
+                <TeamTable names={this.state.teamOne}/>
               </Table>
             </div>          
           </Col>
@@ -87,14 +80,7 @@ class TeamSignup extends React.Component {
               <Button variant="secondary">Team 2</Button>
             </div>
             <Table striped bordered hover>
-              <tbody>
-                <tr>
-                  <td>Name 3</td>
-                </tr>
-                <tr>
-                  <td>Name 4</td>
-                </tr>
-              </tbody>
+              <TeamTable names={this.state.teamTwo}/>
             </Table>
           </Col>
         </Row>
@@ -113,6 +99,20 @@ class TeamSignup extends React.Component {
       </Container>
     );
   }  
+}
+
+function TeamTable(props) {
+  const names = props.names;
+  const rowItems = names.map((name, index) => 
+    <tr>
+      <td key={index}>
+        {name}
+      </td>
+    </tr>
+  );
+  return (
+    <tbody>{rowItems}</tbody>
+  );
 }
 
 export default TeamSignup;
