@@ -11,7 +11,10 @@ class TeamSignup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      playerName: ''
+      playerName: '',
+      teamOne: [],
+      teamTwo: [],
+      isTeamOne: true
     };
 
     this.changePlayerName = this.changePlayerName.bind(this);
@@ -23,7 +26,20 @@ class TeamSignup extends React.Component {
   }
 
   addPlayer(event) {
-    alert('A name was submitted: ' + this.state.playerName);
+    this.state.isTeamOne ?
+      this.setState((state, props) => ({
+        teamOne: state.teamOne.concat(state.playerName)
+      })) :
+      this.setState((state, props) => ({
+        teamTwo: state.teamTwo.concat(state.playerName)
+      }));
+
+    this.setState((state, props) => ({
+      isTeamOne: !state.isTeamOne
+    }));
+
+    this.setState({playerName: ''});
+
     event.preventDefault();
   }
   
