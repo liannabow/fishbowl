@@ -19,6 +19,7 @@ class TeamSignup extends React.Component {
 
     this.changePlayerName = this.changePlayerName.bind(this);
     this.addPlayer = this.addPlayer.bind(this);
+    this.shuffleTeams = this.shuffleTeams.bind(this);
   }
 
   changePlayerName(event) {
@@ -41,6 +42,35 @@ class TeamSignup extends React.Component {
     this.setState({playerName: ''});
 
     event.preventDefault();
+  }
+
+  shuffleTeams() {
+    const allPlayers = this.state.teamOne.concat(this.state.teamTwo);
+    
+    //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    let currentIndex = allPlayers.length, temporaryValue, randomIndex;
+
+    //While there remain elements to shuffle...
+    while(0 !== currentIndex) {
+      
+      //Pick a remaining element
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      //And swap it with the current element
+      temporaryValue = allPlayers[currentIndex];
+      allPlayers[currentIndex] = allPlayers[randomIndex];
+      allPlayers[randomIndex] = temporaryValue;
+    }
+
+    //https://stackoverflow.com/questions/9181188/splice-an-array-in-half-no-matter-the-size
+    const half_length = Math.ceil(allPlayers.length / 2);
+
+    const teamOne = allPlayers.splice(0,half_length);
+    const teamTwo = allPlayers;
+
+    this.setState({teamOne: teamOne});
+    this.setState({teamTwo: teamTwo});
   }
   
   render() {
@@ -87,7 +117,9 @@ class TeamSignup extends React.Component {
         <Row>
           <Col>
             <div align="center">
-              <Button variant="warning">Shuffle Teams</Button>
+              <Button variant="warning" onClick={this.shuffleTeams}>
+                Shuffle Teams
+              </Button>
             </div>
           </Col>
           <Col>
