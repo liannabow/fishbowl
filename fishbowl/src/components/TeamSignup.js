@@ -29,8 +29,8 @@ class TeamSignup extends React.Component {
 
   addPlayer(event) {
     this.state.isTeamOne ?
-      this.setState((state, props) => ({
-        teamOne: state.teamOne.concat(state.playerName)
+      this.props.onTeamChange((state, props) => ({
+        teamOne: props.teamOne.concat(state.playerName)
       })) :
       this.setState((state, props) => ({
         teamTwo: state.teamTwo.concat(state.playerName)
@@ -70,6 +70,7 @@ class TeamSignup extends React.Component {
     const teamOne = allPlayers.splice(0,half_length);
     const teamTwo = allPlayers;
 
+    //TODO: use onTeamChange here to lift state
     this.setState({teamOne: teamOne});
     this.setState({teamTwo: teamTwo});
   }

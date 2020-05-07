@@ -5,14 +5,36 @@ import SplashScreen from './components/SplashScreen';
 import TeamSignup from './components/TeamSignup';
 import TimingSettings from './components/TimingSettings';
 
-function App() {
-  return (
-    <Switch>
-      <Route exact path="/" component={SplashScreen}/>
-      <Route path="/TeamSignup" component={TeamSignup}/>
-      <Route path="/Timing" component={TimingSettings}/>
-    </Switch>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      teamOne: [],
+      teamTwo: []
+    }
+
+    this.handleTeamChange = this.handleTeamChange.bind(this);
+  }
+
+  handleTeamChange(teamOne) {
+    this.setState({teamOne: teamOne});
+  }
+
+  render() {
+    return (
+      <Switch>
+        <Route exact path="/" component={SplashScreen}/>
+        <Route
+          path="/TeamSignup"
+          render={props => <TeamSignup {...props}
+            teamOne={this.state.teamOne}
+            onTeamChange={this.handleTeamChange}
+          />}/>
+        <Route path="/Timing" component={TimingSettings}/>
+      </Switch>
+    );
+  }
+  
 }
 
 export default App;
