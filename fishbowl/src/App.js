@@ -16,8 +16,10 @@ class App extends React.Component {
     this.handleTeamChange = this.handleTeamChange.bind(this);
   }
 
-  handleTeamChange(teamOne) {
-    this.setState({teamOne: teamOne});
+  handleTeamChange(playerName) {
+    this.setState((state, props) => ({
+      teamOne: state.teamOne.concat(playerName)
+    }));
   }
 
   render() {

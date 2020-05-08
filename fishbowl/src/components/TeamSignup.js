@@ -29,9 +29,7 @@ class TeamSignup extends React.Component {
 
   addPlayer(event) {
     this.state.isTeamOne ?
-      this.props.onTeamChange((state, props) => ({
-        teamOne: props.teamOne.concat(state.playerName)
-      })) :
+      this.props.onTeamChange(this.state.playerName) :
       this.setState((state, props) => ({
         teamTwo: state.teamTwo.concat(state.playerName)
       }));
