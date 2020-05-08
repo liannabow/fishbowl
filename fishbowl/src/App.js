@@ -9,17 +9,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      teamOne: [],
-      teamTwo: []
+      teamOne: []
     }
 
     this.handleTeamChange = this.handleTeamChange.bind(this);
+    this.handleTeamOneUpdate = this.handleTeamOneUpdate.bind(this);
   }
 
   handleTeamChange(playerName) {
     this.setState((state, props) => ({
       teamOne: state.teamOne.concat(playerName)
     }));
+  }
+
+  handleTeamOneUpdate(teamOne) {
+    this.setState({teamOne: teamOne});
   }
 
   render() {
@@ -31,6 +35,7 @@ class App extends React.Component {
           render={props => <TeamSignup {...props}
             teamOne={this.state.teamOne}
             onTeamChange={this.handleTeamChange}
+            onTeamOneUpdate={this.handleTeamOneUpdate}
           />}/>
         <Route path="/Timing" component={TimingSettings}/>
       </Switch>

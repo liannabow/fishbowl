@@ -13,7 +13,6 @@ class TeamSignup extends React.Component {
     super(props);
     this.state = {
       playerName: '',
-      teamOne: [],
       teamTwo: [],
       isTeamOne: true
     };
@@ -44,7 +43,7 @@ class TeamSignup extends React.Component {
   }
 
   shuffleTeams() {
-    const allPlayers = this.state.teamOne.concat(this.state.teamTwo);
+    const allPlayers = this.props.teamOne.concat(this.state.teamTwo);
     
     //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     let currentIndex = allPlayers.length, temporaryValue, randomIndex;
@@ -69,7 +68,7 @@ class TeamSignup extends React.Component {
     const teamTwo = allPlayers;
 
     //TODO: use onTeamChange here to lift state
-    this.setState({teamOne: teamOne});
+    this.props.onTeamOneUpdate(teamOne);
     this.setState({teamTwo: teamTwo});
   }
   
@@ -101,7 +100,7 @@ class TeamSignup extends React.Component {
             <div align="center">
               <Button variant="secondary">Team 1</Button>
               <Table striped bordered hover>
-                <TeamTable names={this.state.teamOne}/>
+                <TeamTable names={this.props.teamOne}/>
               </Table>
             </div>          
           </Col>
