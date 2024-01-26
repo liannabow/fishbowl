@@ -1738,6 +1738,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@babel/runtime@^7.5.1":
 =======
 "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3":
@@ -1852,6 +1853,14 @@
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.13.8", "@babel/runtime@^7.14.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3":
+  version "7.20.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.7.tgz#fcb41a5a70550e04a7b708037c7c32f7f356d8fd"
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 "@babel/runtime@^7.5.1", "@babel/runtime@^7.7.4":
 >>>>>>> 23d88b5450545002adede6986731f5d034b5ccfc
   version "7.9.2"
@@ -2835,6 +2844,20 @@
   dependencies:
     dequal "^2.0.2"
 
+"@popperjs/core@^2.11.6":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+
+"@restart/context@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@restart/context/-/context-2.1.4.tgz#a99d87c299a34c28bd85bb489cb07bfd23149c02"
+
+"@restart/hooks@^0.4.7":
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.4.7.tgz#d79ca6472c01ce04389fc73d4a79af1b5e33cd39"
+  dependencies:
+    dequal "^2.0.2"
+
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
   resolved "https://registry.npmjs.org/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz"
@@ -3199,6 +3222,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/invariant@^2.2.33":
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3317,6 +3341,11 @@
   version "2.2.35"
   resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.35.tgz#cd3ebf581a6557452735688d8daba6cf0bd5a3be"
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+"@types/invariant@^2.2.33":
+  version "2.2.35"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.35.tgz#cd3ebf581a6557452735688d8daba6cf0bd5a3be"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
@@ -3410,6 +3439,10 @@
 "@types/prop-types@^15.7.3":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
+
+"@types/prop-types@^15.7.3":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
 
 "@types/prop-types@^15.7.3":
   version "15.7.5"
@@ -3564,6 +3597,12 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-transition-group@^4.4.1":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.5.tgz#aae20dcf773c5aa275d5b9f7cdbca638abc5e416"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
 >>>>>>> 23d88b5450545002adede6986731f5d034b5ccfc
   version "16.9.34"
@@ -3573,6 +3612,7 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3667,11 +3707,17 @@
   version "18.0.26"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.26.tgz#8ad59fc01fef8eaf5c74f4ea392621749f0b7917"
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+"@types/react@>=16.14.8", "@types/react@>=16.9.11":
+  version "18.0.26"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.26.tgz#8ad59fc01fef8eaf5c74f4ea392621749f0b7917"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3746,10 +3792,13 @@
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 "@types/scheduler@*":
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 889a0857ebcc0a6bd7c4b0fe241dc14dfdb71881
@@ -3757,6 +3806,8 @@
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-1.0.1.tgz"
@@ -3820,6 +3871,7 @@
     "@types/testing-library__dom" "*"
     pretty-format "^25.1.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3894,10 +3946,13 @@
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 "@types/warning@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3917,6 +3972,8 @@
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 "@types/yargs-parser@*":
   version "15.0.0"
   resolved "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-15.0.0.tgz"
@@ -5414,6 +5471,10 @@ bootstrap@^4.4.1:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.2.tgz#8e0cd61611728a5bf65a3a2b8d6ff6c77d5d7479"
 
+bootstrap@^4.4.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.2.tgz#8e0cd61611728a5bf65a3a2b8d6ff6c77d5d7479"
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -5968,6 +6029,7 @@ class-utils@^0.3.5:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 classnames@^2.2.6:
 <<<<<<< HEAD
   version "2.2.6"
@@ -6055,6 +6117,11 @@ classnames@^2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+classnames@^2.3.1:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 
 clean-css@^4.2.3:
   version "4.2.3"
@@ -6946,6 +7013,7 @@ csstype@^3.0.2:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
 
@@ -7013,6 +7081,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
 
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
+
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/cyclist/-/cyclist-1.0.1.tgz"
@@ -7277,6 +7350,7 @@ dequal@^2.0.2:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
 
@@ -7320,6 +7394,11 @@ dequal@^2.0.2:
   resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
 
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
+
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 des.js@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/des.js/-/des.js-1.0.1.tgz"
@@ -7502,6 +7581,7 @@ dom-converter@^0.2.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 dom-helpers@^5.0.1, dom-helpers@^5.1.0, dom-helpers@^5.1.2:
   version "5.1.4"
   resolved "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.1.4.tgz"
@@ -7567,11 +7647,15 @@ dom-helpers@^5.0.1, dom-helpers@^5.2.0, dom-helpers@^5.2.1:
 =======
 dom-helpers@^5.0.1, dom-helpers@^5.2.0, dom-helpers@^5.2.1:
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+dom-helpers@^5.0.1, dom-helpers@^5.2.0, dom-helpers@^5.2.1:
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
   dependencies:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7620,6 +7704,8 @@ dom-helpers@^5.0.1, dom-helpers@^5.1.0, dom-helpers@^5.1.2:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 
 dom-serializer@0:
   version "0.2.2"
@@ -9685,6 +9771,17 @@ history@^4.9.0:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
+history@^4.9.0:
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    loose-envify "^1.2.0"
+    resolve-pathname "^3.0.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+    value-equal "^1.0.1"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -9812,6 +9909,12 @@ hoist-non-react-statics@^3.1.0:
 =======
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
 >>>>>>> ce49830ce2e1d652cc49b2b2dcbb213eaa5edc82
+  dependencies:
+    react-is "^16.7.0"
+
+hoist-non-react-statics@^3.1.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   dependencies:
     react-is "^16.7.0"
 
@@ -10821,6 +10924,7 @@ is-wsl@^2.1.1:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 isarray@^1.0.0, isarray@~1.0.0, isarray@1.0.0:
 =======
 =======
@@ -10831,10 +10935,13 @@ isarray@^1.0.0, isarray@~1.0.0, isarray@1.0.0:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10908,6 +11015,8 @@ isarray@0.0.1:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
 >>>>>>> 23d88b5450545002adede6986731f5d034b5ccfc
 =======
@@ -11912,9 +12021,14 @@ json3@^3.3.2:
 =======
 >>>>>>> 8aeef6faa902481ba3ce995f3c21e1c811382848
 json5@^1.0.1:
+<<<<<<< HEAD
   version "1.0.1"
   resolved "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz"
   integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+=======
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   dependencies:
     minimist "^1.2.0"
 
@@ -12788,12 +12902,17 @@ minimatch@^3.0.4:
 
 <<<<<<< HEAD
 minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+<<<<<<< HEAD
 =======
 minimatch@^3.0.5, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   dependencies:
     brace-expansion "^1.1.7"
+=======
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 
 minimatch@^5.0.1:
   version "5.1.0"
@@ -13845,6 +13964,7 @@ path-to-regexp@^1.7.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 path-to-regexp@^1.7.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
@@ -13926,6 +14046,8 @@ path-to-regexp@^1.7.0:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 path-type@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-2.0.0.tgz"
@@ -15375,6 +15497,7 @@ prop-types-extra@^1.1.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 prop-types-extra@^1.1.0:
   version "1.1.1"
 <<<<<<< HEAD
@@ -15482,6 +15605,8 @@ prop-types@^15.0.0, prop-types@^15.6.2, prop-types@^15.7.2:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 prop-types@^15.6.2, prop-types@^15.7.2:
 >>>>>>> 23d88b5450545002adede6986731f5d034b5ccfc
   version "15.7.2"
@@ -16038,6 +16163,28 @@ react-bootstrap@^1.0.1:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
+react-bootstrap@^1.0.1:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.6.6.tgz#3f3b274f8923b9886008a0e61485b5ac9a2b3073"
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@restart/context" "^2.1.4"
+    "@restart/hooks" "^0.4.7"
+    "@types/invariant" "^2.2.33"
+    "@types/prop-types" "^15.7.3"
+    "@types/react" ">=16.14.8"
+    "@types/react-transition-group" "^4.4.1"
+    "@types/warning" "^3.0.0"
+    classnames "^2.3.1"
+    dom-helpers "^5.2.1"
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
+    prop-types-extra "^1.1.0"
+    react-overlays "^5.1.2"
+    react-transition-group "^4.4.1"
+    uncontrollable "^7.2.1"
+    warning "^4.0.3"
+
 react-dev-utils@^10.2.1:
   version "10.2.1"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-10.2.1.tgz"
@@ -16115,6 +16262,7 @@ react-is@^16.12.0, react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 react-error-overlay@^6.0.11:
   version "6.0.11"
@@ -16130,12 +16278,15 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.3.2, react-is@^16.6.0, react-
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16696,6 +16847,8 @@ react-overlays@^5.1.2:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
 react-overlays@^5.1.2:
@@ -16706,11 +16859,14 @@ react-overlays@^5.1.2:
     "@popperjs/core" "^2.11.6"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 889a0857ebcc0a6bd7c4b0fe241dc14dfdb71881
 =======
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
     "@restart/hooks" "^0.4.7"
     "@types/warning" "^3.0.0"
     dom-helpers "^5.2.0"
@@ -16719,6 +16875,7 @@ react-overlays@^5.1.2:
     warning "^4.0.3"
 
 react-router-dom@^5.1.2:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16736,11 +16893,16 @@ react-router-dom@^5.1.2:
   version "5.3.4"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.3.4.tgz#2ed62ffd88cae6db134445f4a0c0ae8b91d2e5e6"
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.3.4.tgz#2ed62ffd88cae6db134445f4a0c0ae8b91d2e5e6"
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   dependencies:
     "@babel/runtime" "^7.12.13"
     history "^4.9.0"
     loose-envify "^1.3.1"
     prop-types "^15.6.2"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16756,6 +16918,8 @@ react-router@5.3.3:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
     react-router "5.3.4"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
@@ -16765,16 +16929,20 @@ react-router@5.3.4:
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.3.4.tgz#8ca252d70fcc37841e31473c7a151cf777887bb5"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 889a0857ebcc0a6bd7c4b0fe241dc14dfdb71881
 =======
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   dependencies:
     "@babel/runtime" "^7.12.13"
     history "^4.9.0"
     hoist-non-react-statics "^3.1.0"
     loose-envify "^1.3.1"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16785,12 +16953,15 @@ react-router@5.3.4:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
     path-to-regexp "^1.7.0"
     prop-types "^15.6.2"
     react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16847,6 +17018,8 @@ react-router@5.3.3:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 react-scripts@3.4.1:
   version "3.4.1"
   resolved "https://registry.npmjs.org/react-scripts/-/react-scripts-3.4.1.tgz"
@@ -16856,6 +17029,7 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16972,6 +17146,8 @@ react-scripts@5.0.1:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 react-transition-group@^4.4.1:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
@@ -16981,6 +17157,7 @@ react-transition-group@^4.4.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17125,6 +17302,8 @@ react@*, "react@^0.14.0 || ^15.0.0 || ^16.0.0", react@^16.13.1, react@^16.8.0, r
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 react@^16.13.1:
 >>>>>>> 23d88b5450545002adede6986731f5d034b5ccfc
   version "16.13.1"
@@ -17409,6 +17588,10 @@ regenerator-runtime@^0.13.11:
   version "0.13.11"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
 
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+
 regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4:
 >>>>>>> 889a0857ebcc0a6bd7c4b0fe241dc14dfdb71881
   version "0.13.5"
@@ -17663,6 +17846,7 @@ resolve-pathname@^3.0.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/resolve-pathname/-/resolve-pathname-3.0.0.tgz"
   integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
@@ -17735,6 +17919,10 @@ resolve-pathname@^3.0.0:
   resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz#99d02224d3cf263689becbb393bc560313025dcd"
 
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz#99d02224d3cf263689becbb393bc560313025dcd"
+
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
 resolve-url-loader@3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/resolve-url-loader/-/resolve-url-loader-3.1.1.tgz"
@@ -19548,6 +19736,14 @@ tiny-warning@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
 
+tiny-invariant@^1.0.2:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
+
+tiny-warning@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.npmjs.org/tmp/-/tmp-0.0.33.tgz"
@@ -19975,6 +20171,15 @@ uncontrollable@^7.2.1:
     invariant "^2.2.4"
     react-lifecycles-compat "^3.0.4"
 
+uncontrollable@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/uncontrollable/-/uncontrollable-7.2.1.tgz#1fa70ba0c57a14d5f78905d533cf63916dc75738"
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    "@types/react" ">=16.9.11"
+    invariant "^2.2.4"
+    react-lifecycles-compat "^3.0.4"
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz"
@@ -20334,6 +20539,10 @@ value-equal@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
 
+value-equal@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
@@ -20414,6 +20623,7 @@ warning@^4.0.0, warning@^4.0.3:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/warning/-/warning-4.0.3.tgz"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
@@ -20463,6 +20673,8 @@ watchpack@^1.6.0:
 >>>>>>> df79586ea1b97f3455510ca6ac6340340afc1144
 =======
 >>>>>>> 3567e778ce80cdad91e688be8bb700848b4de527
+=======
+>>>>>>> 44ec1fcc36571831223fef30af155debb475d57d
   resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   dependencies:
     loose-envify "^1.0.0"
