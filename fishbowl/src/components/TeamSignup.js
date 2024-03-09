@@ -139,8 +139,8 @@ class TeamSignup extends React.Component {
 function TeamTable(props) {
   const names = props.names;
   const rowItems = names.map((name, index) => 
-    <tr>
-      <td key={index}>
+    <tr key={index}>
+      <td>
         {name}
       </td>
     </tr>
