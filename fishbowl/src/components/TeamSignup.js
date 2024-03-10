@@ -28,12 +28,17 @@ class TeamSignup extends React.Component {
   }
 
   addPlayer(event) {
+    const player = {
+      name: this.state.playerName,
+      id: Date.now()
+    };
+
     this.state.isTeamOne ?
       this.setState((state, props) => ({
-        teamOne: state.teamOne.concat(state.playerName)
+        teamOne: [...state.teamOne, player]
       })) :
       this.setState((state, props) => ({
-        teamTwo: state.teamTwo.concat(state.playerName)
+        teamTwo: [...state.teamTwo, player]
       }));
 
     this.setState((state, props) => ({
@@ -102,7 +107,7 @@ class TeamSignup extends React.Component {
             <div align="center">
               <Button variant="secondary">Team 1</Button>
               <Table striped bordered hover>
-                <TeamTable names={this.state.teamOne}/>
+                <TeamTable team={this.state.teamOne}/>
               </Table>
             </div>          
           </Col>
@@ -111,7 +116,7 @@ class TeamSignup extends React.Component {
               <Button variant="secondary">Team 2</Button>
             </div>
             <Table striped bordered hover>
-              <TeamTable names={this.state.teamTwo}/>
+              <TeamTable team={this.state.teamTwo}/>
             </Table>
           </Col>
         </Row>
@@ -137,11 +142,11 @@ class TeamSignup extends React.Component {
 }
 
 function TeamTable(props) {
-  const names = props.names;
-  const rowItems = names.map((name, index) => 
-    <tr key={index}>
+  const team = props.team;
+  const rowItems = team.map((player) => 
+    <tr key={player.id}>
       <td>
-        {name}
+        {player.name}
       </td>
     </tr>
   );
