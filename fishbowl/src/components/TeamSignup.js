@@ -12,40 +12,53 @@ class TeamSignup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      playerName: '',
+      teamOnePlayerName: '',
+      teamTwoPlayerName: '',
       teamOne: [],
-      teamTwo: [],
-      isTeamOne: true
+      teamTwo: []
     };
 
-    this.changePlayerName = this.changePlayerName.bind(this);
-    this.addPlayer = this.addPlayer.bind(this);
+    this.changeTeamOnePlayerName = this.changeTeamOnePlayerName.bind(this);
+    this.changeTeamTwoPlayerName = this.changeTeamTwoPlayerName.bind(this);
+    this.addTeamOnePlayer = this.addTeamOnePlayer.bind(this);
+    this.addTeamTwoPlayer = this.addTeamTwoPlayer.bind(this);
     this.shuffleTeams = this.shuffleTeams.bind(this);
   }
 
-  changePlayerName(event) {
-    this.setState({playerName: event.target.value})
+  changeTeamOnePlayerName(event) {
+    this.setState({teamOnePlayerName: event.target.value})
   }
 
-  addPlayer(event) {
+  changeTeamTwoPlayerName(event) {
+    this.setState({teamTwoPlayerName: event.target.value})
+  }
+
+  addTeamOnePlayer(event) {
     const player = {
-      name: this.state.playerName,
+      name: this.state.teamOnePlayerName,
       id: Date.now()
     };
 
-    this.state.isTeamOne ?
-      this.setState((state, props) => ({
-        teamOne: [...state.teamOne, player]
-      })) :
-      this.setState((state, props) => ({
-        teamTwo: [...state.teamTwo, player]
-      }));
-
     this.setState((state, props) => ({
-      isTeamOne: !state.isTeamOne
+      teamOne: [...state.teamOne, player]
     }));
 
-    this.setState({playerName: ''});
+    this.setState({teamOnePlayerName: ''});
+
+    event.preventDefault();
+  }
+
+  addTeamTwoPlayer(event) {
+    const player = {
+      name: this.state.teamTwoPlayerName,
+      id: Date.now()
+    };
+
+    this.setState((state, props) => ({
+      teamTwo: [...state.teamTwo, player]
+    }));
+
+    this.setState({teamTwoPlayerName: ''});
 
     event.preventDefault();
   }
@@ -87,25 +100,25 @@ class TeamSignup extends React.Component {
             <h1>Team Signup</h1>
           </Col>
         </Row>
-          <Form onSubmit={this.addPlayer}>
-            <Form.Row>
-              <Col xs={8}>
-                <Form.Control
-                  type="text"
-                  placeholder="Player Name"
-                  value={this.state.playerName}
-                  onChange={this.changePlayerName}
-                  />
-              </Col>
-              <Col>
-                <Button variant="primary" type="submit">Add</Button>
-              </Col>
-            </Form.Row>
-          </Form>
         <Row className="Row">
           <Col>
             <div align="center">
               <Button variant="secondary">Team 1</Button>
+              <Form onSubmit={this.addTeamOnePlayer}>
+                <Form.Row>
+                  <Col xs={8}>
+                    <Form.Control
+                      type="text"
+                      placeholder="Player Name"
+                      value={this.state.teamOnePlayerName}
+                      onChange={this.changeTeamOnePlayerName}
+                    />
+                  </Col>
+                  <Col>
+                    <Button variant="primary" type="submit">Add</Button>
+                  </Col>
+                </Form.Row>
+              </Form>
               <Table striped bordered hover>
                 <TeamTable team={this.state.teamOne}/>
               </Table>
@@ -114,10 +127,25 @@ class TeamSignup extends React.Component {
           <Col>
             <div align="center">
               <Button variant="secondary">Team 2</Button>
-            </div>
+              <Form onSubmit={this.addTeamTwoPlayer}>
+              <Form.Row>
+                  <Col xs={8}>
+                    <Form.Control
+                      type="text"
+                      placeholder="Player Name"
+                      value={this.state.teamTwoPlayerName}
+                      onChange={this.changeTeamTwoPlayerName}
+                    />
+                  </Col>
+                  <Col>
+                    <Button variant="primary" type="submit">Add</Button>
+                  </Col>
+                </Form.Row>
+              </Form>
             <Table striped bordered hover>
               <TeamTable team={this.state.teamTwo}/>
             </Table>
+            </div>
           </Col>
         </Row>
         <Row>
