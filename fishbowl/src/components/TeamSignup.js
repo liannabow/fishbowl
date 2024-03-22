@@ -105,7 +105,7 @@ class TeamSignup extends React.Component {
             <div align="center">
               <Button variant="secondary">Team 1</Button>
               <Form onSubmit={this.addTeamOnePlayer}>
-                <Form.Row>
+                <Form.Row className="Table">
                   <Col xs={8}>
                     <Form.Control
                       type="text"
@@ -128,7 +128,7 @@ class TeamSignup extends React.Component {
             <div align="center">
               <Button variant="secondary">Team 2</Button>
               <Form onSubmit={this.addTeamTwoPlayer}>
-              <Form.Row>
+              <Form.Row className="Table">
                   <Col xs={8}>
                     <Form.Control
                       type="text"
