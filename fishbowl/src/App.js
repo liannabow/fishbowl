@@ -37,7 +37,11 @@ class App extends React.Component {
             onTeamChange={this.handleTeamChange}
             onTeamOneUpdate={this.handleTeamOneUpdate}
           />}/>
-        <Route path="/Timing" component={TimingSettings}/>
+        <Route
+          path ="/Timing"
+          render={props => <TimingSettings {...props}
+            teamOne={this.state.teamOne}
+          />}/>
       </Switch>
     );
   }
